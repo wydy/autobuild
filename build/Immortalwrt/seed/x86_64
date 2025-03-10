@@ -134,17 +134,6 @@ CONFIG_PACKAGE_luci-app-argon-config=y
 CONFIG_PACKAGE_luci-app-ddns-go=y
 CONFIG_PACKAGE_luci-app-mosdns=y
 CONFIG_PACKAGE_luci-app-netdata=y
-CONFIG_PACKAGE_luci-app-passwall=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Geoview=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Haproxy=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Hysteria=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_SingBox=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Geodata=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray_Plugin=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_tuic_client=y
-CONFIG_PACKAGE_luci-app-passwall_Nftables_Transparent_Proxy=y
 CONFIG_PACKAGE_luci-app-smartdns=y
 CONFIG_PACKAGE_luci-app-sqm=y
 CONFIG_PACKAGE_luci-app-upnp=y
@@ -153,7 +142,6 @@ CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-ddns-go-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-mosdns-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-netdata-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-smartdns-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-sqm-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
@@ -202,15 +190,3 @@ CONFIG_boost-compile-visibility-hidden=y
 CONFIG_boost-runtime-shared=y
 CONFIG_boost-static-and-shared-libs=y
 CONFIG_boost-variant-release=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client is not set
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client is not set
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server is not set
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Simple_Obfs is not set
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin is not set
-# CONFIG_PACKAGE_shadowsocks-libev-config is not set
-# CONFIG_PACKAGE_shadowsocks-libev-ss-local is not set
-# CONFIG_PACKAGE_shadowsocks-libev-ss-redir is not set
-# CONFIG_PACKAGE_shadowsocks-libev-ss-server is not set
-# CONFIG_PACKAGE_shadowsocksr-libev-ssr-local is not set
-# CONFIG_PACKAGE_shadowsocksr-libev-ssr-redir is not set
-# CONFIG_PACKAGE_v2ray-plugin is not set
