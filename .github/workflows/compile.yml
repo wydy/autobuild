@@ -9,7 +9,7 @@ on:
     branches:
       - main
     paths:
-      - 'build/Immortalwrt/relevance/start'
+      - 'buconfig'
 
 env:
   GIT_REPOSITORY: ${{github.repository}}
@@ -30,7 +30,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-                target: [Immortalwrt]
+        target: [Mt798x]
 
     steps:    
     - name: 准备结束
