@@ -2,7 +2,7 @@
 # 打包Amlogic/Rockchip固件,请勿修改文件名称（packaging.yml）
 #
 
-name: 打包aarch64系列固件
+name: 打包armsr_rootfs_tar_gz
 on:
   repository_dispatch:
   workflow_dispatch:
@@ -218,7 +218,7 @@ env:
 
 jobs:
   build:
-    name: 打包aarch64系列固件
+    name: 打包armsr_rootfs_tar_gz
     runs-on: ubuntu-22.04
     steps:
     - name: 准备结束
@@ -289,11 +289,11 @@ jobs:
         fi
         find $FIRMWARE_PATH -type f -name "*.tar.gz" -size -2M -delete
         if [[ -z "$(find $FIRMWARE_PATH -maxdepth 1 -name '*rootfs.tar.gz' -print -quit)" ]]; then
-          echo -e "\033[31m[${SOURCE}-armvirt-64-default-rootfs.tar.gz]包小于2MB,非正常rootfs.tar.gz包\033[0m"
+          echo -e "\033[31m没发现[${SOURCE}-armvirt-64-default-rootfs.tar.gz]包存在\033[0m"
           exit 1
         fi
 
-    - name: 自动打包aarch64系列固件
+    - name: 自动打包armsr_rootfs_tar_gz
       id: compile
       uses: 281677160/common@aarch
 
